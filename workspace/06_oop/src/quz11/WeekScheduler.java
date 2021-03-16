@@ -157,7 +157,7 @@ public class WeekScheduler {
 		System.out.println("===스케쥴 조회===");
 		System.out.println("스케쥴을 조회할 요일(일~토) 입력 >>> ");
 		String weekName = sc.next();
-		
+		 
 		weekName = weekName.substring(0, 1); // weekName.charAt(0) + "";
 		for (int i =0; i < week.length; i++) {
 			if(weekNames[i].equals(weekName)) {
