@@ -1,0 +1,30 @@
+package ex01_random;
+
+import java.util.Scanner;
+
+public class Quiz04 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String[] gababo = { "가위", "바위", "보" };
+		
+		int win = 0;
+		int draw = 0;
+		
+		
+		while(true) {
+			System.out.print("가위바위보 >>> ");
+			int player = 0;
+			switch(sc.next()) {
+			case"바위":
+				player = 1;
+				break;
+			case"보":
+				player = 2;
+			}
+			System.out.println("Player는 " + gababo[player]);
+		}
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package ex02_2d_array;
+
+public class Quiz03 {
+
+	public static void main(String[] args) {
+		int[][] nol = new int[90][10];
+		for(int i = 0; i < nol.length; i++) {
+			for(int j = 0; j < nol[i].length; j++) {
+				nol[i][j] = (i+1)+(j);
+				if((i+1)/3==0) {
+					System.out.print("짝");
+				}else if((i+1)/3==0 && j/3==0) {
+					System.out.println("짝짝");
+				}
+				
+				System.out.print(nol[i][j] + "\t");
+			}
+		System.out.println();
+		}
+	}
+
+}

@@ -1,0 +1,44 @@
+package ex02_2d_array;
+
+import java.util.Scanner;
+
+public class Quiz05 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String[][] dict = {
+				{ "봄", "spring" },
+				{ "여름", "summer" },
+				{ "가을", "fall" },
+				{ "겨울", "winter" }
+		};
+		
+		
+		int wrong = 0; // 틀린 문제의 갯수
+		
+		
+		for (int i = 0; i < dict.length; i++) {
+			for (int j = 0; j < dict[i].length-1; j++) {
+				System.out.print(dict[i][j] + "을 영어로 하면? >>>");
+				dict[i][j] = sc.next();
+				if(dict[0][0]==dict[0][1]) {
+					System.out.println("정답입니다.");
+				}else if(dict[1][0]==dict[1][1]) {
+					System.out.println("정답입니다.");
+				}else if(dict[2][0]==dict[2][1]) {
+					System.out.println("정답입니다.");
+				}else if(dict[3][0]==dict[3][1]) {
+					System.out.println("정답입니다.");
+				}else {
+					wrong++;
+					System.out.println("오답입니다.");
+				}
+			}
+				
+		}
+		System.out.println("틀린 개수는 " + wrong);	
+		
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package ex07_recusive;
+
+public class Adder {
+	
+	private int total; // 0으로 초기화
+	
+	public void calculate(int n) {
+		if(n == 0) {
+			return; // 결과타입이 void인 경우에만 return; 을 통해 메소드 종료합니다.
+		}
+			total += n;
+			calculate(n - 1);
+
+	
+	
+	
+}
+
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}

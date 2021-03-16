@@ -1,0 +1,15 @@
+package ex01_array;
+
+import java.util.Scanner;
+
+public class Quiz03 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String[] students = {"타요", "브레드", "스폰지밥", "짱구", "구하리"};
+		int[] scores = new int[students.length];
+		for (int i = 0; i < students.length; i++) {
+			System.out.println((i+1) + "의 점수를 입력 >> ");
+		}
+	}
+}

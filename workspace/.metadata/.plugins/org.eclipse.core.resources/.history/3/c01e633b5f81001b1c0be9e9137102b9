@@ -1,0 +1,17 @@
+package ex02_String;
+
+public class Ex01_String {
+
+	public static void main(String[] args) {
+		//1.
+		String a = "apple";
+		String b = "apple";
+		System.out.println(a == b); // 참조비교(주소비교)
+		
+		//2.
+		String c = new String("banana");
+		String d = new String("banana");
+		System.out.println(c == d);
+	}
+
+}

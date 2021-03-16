@@ -1,0 +1,17 @@
+package quiz03;
+
+public class Singer {
+	
+	//field
+	private String name;
+	private Song song; // private Song[] songs;
+	
+	public setSinger(String name, Song song) {
+		this.name = name;
+		this.song = song;
+	}
+	
+	public void info() {
+		System.out.println(name + song);
+	}
+}

@@ -1,0 +1,60 @@
+package quiz07;
+
+import java.util.Scanner;
+
+public class Player {
+
+	// field
+	private String name;
+	private Scanner sc = new Scanner(System.in);
+	private Player[] players;
+	
+	// constructor
+	public Player(String name) {
+		this.name = name;
+	}
+	
+	// method
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int play() {
+		System.out.println(name + "'s game start!");
+		System.out.println("Press Enter!");
+		// Enter입력 : nextLine()
+		sc.nextLine();
+		long start = System.currentTimeMillis();
+		System.out.println("After 10seconds Press Enter!");
+		sc.nextLine();
+		long end = System.currentTimeMillis();
+		//경과시간반환
+		return (int)((end -start) / 1000);
+	}
+	public void play() {
+		//Player들의 play() 결과를 저장할 int[] times
+		int[] times = new int[players.length];
+		for (int i = 0; i < players.length; i++) {
+			times[i] = players[i].play();
+		}
+		// times 배열에서 10과 가장 가까운 값 찾기
+		//(times[i] - 10)의 절대값을 구한 뒤 그 중 가장 작은 값(최소값)을 구합니다.
+		// 절대값 : Math.abs(n)
+		
+		int min = Math.abs(times[0] - 10);
+		int winnerNo = 0;
+		for (int i = 0; i < times.length; i++) {
+			if(min > Math.abs(times[i] - 10)) {
+				min = Math.abs(times[i] - 10);
+				winnerNo = i;
+			}
+		}
+		for (int i = 0; i < players.length; i++) {
+			System.out.println(players[i].getName() + "'s result: " + times[i] + "second");
+		}
+		System.out.println(players[winnerNo]);
+	}
+}

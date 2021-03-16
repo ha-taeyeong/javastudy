@@ -1,0 +1,23 @@
+package ex01_branch;
+
+public class Ex01_if {
+
+	public static void main(String[] args) {
+		/*
+		if (true) {
+			System.out.println("만족합니다.");
+		}
+		if (flase) {
+			System.out.println("만족합니다.");
+		}
+		*/
+		int score = 60;
+		boolean isPass = (score >= 60);
+		if (isPass) {
+			System.out.println("합격");
+		} else {
+			System.out.println("불합격");
+		}
+	}
+
+}

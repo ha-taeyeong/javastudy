@@ -1,0 +1,29 @@
+package quiz04;
+
+public class Soldier {
+	
+	//field
+	private String name;
+	private Gun gun;
+	
+	//constructor
+	public Soldier(String name, Gun gun) {
+		this.name = name;
+		this.gun = gun;	
+		
+		gun.shoot();
+		gun.shoot();
+		gun.shoot();
+
+		gun.reload(2);
+		gun.reload(6);
+		gun.reload(6);
+		
+	}
+	
+	public void info() {
+		
+		System.out.print(name+ ",");
+		gun.info();
+	}
+}

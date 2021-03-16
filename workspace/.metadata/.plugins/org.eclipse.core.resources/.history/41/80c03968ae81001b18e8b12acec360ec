@@ -1,0 +1,16 @@
+package ex03_api;
+
+import java.sql.Date;
+
+public class Ex03_Date {
+
+	public static void main(String[] args) {
+		
+		long date = System.currentTimeMillis();
+		Date today = new Date(date);
+		
+		System.out.println(today);
+
+	}
+
+}

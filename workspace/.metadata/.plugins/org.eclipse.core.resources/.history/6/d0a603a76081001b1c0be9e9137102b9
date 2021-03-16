@@ -1,0 +1,18 @@
+package ex02_String;
+
+import java.util.Scanner;
+
+public class Quiz01 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String [] clock = { "시간", "분", "초" };
+		for(int i = 0; i < clock.length; i++) {
+			System.out.println(clock[i] + ">>");
+			int n = sc.nextInt();
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package ex07_recusive;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+
+		Adder adder = new Adder();
+		adder.calculate(10); // 1부터 10까지 합계
+		System.out.println(adder.getTotal());
+
+	}
+
+}

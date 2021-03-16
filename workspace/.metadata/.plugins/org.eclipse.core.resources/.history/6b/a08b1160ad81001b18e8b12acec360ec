@@ -1,0 +1,13 @@
+package ex03_api;
+
+import java.util.Date;
+
+public class Ex02_Date {
+
+	public static void main(String[] args) {
+		
+		Date today = new Date();
+		System.out.println(today);
+	}
+
+}

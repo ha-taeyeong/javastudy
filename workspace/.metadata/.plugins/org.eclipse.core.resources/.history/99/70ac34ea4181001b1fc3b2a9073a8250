@@ -1,0 +1,30 @@
+package ex01_random;
+
+import java.util.Scanner;
+
+public class Quiz02 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int rand = (int)(Math.random() * 10000) + 1; // 난수 발생
+		int n = 0; // 사용자 입력 값
+		int times = 0; // 입력 횟수
+		
+		do {
+			System.out.println("1~10000 사이의 숫자를 입력하세요 >>> ");
+			n = sc.nextInt();
+			
+			if(n < rand) {
+				System.out.println("Up");
+			}else if(n > rand) {
+				System.out.println("Down");
+			}
+		}while(n==rand);
+		
+		
+		
+
+	}
+
+}

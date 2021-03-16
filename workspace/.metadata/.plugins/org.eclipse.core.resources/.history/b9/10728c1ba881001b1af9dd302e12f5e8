@@ -1,0 +1,29 @@
+package ex02_String;
+
+public class Ex02_StringBuilder {
+
+	public static void main(String[] args) {
+		//1.
+		StringBuilder sb = new StringBuilder("hello");
+
+		//2.
+		sb.append(" ").append("java");
+		
+		System.out.println(sb);
+		
+		StringBuilder sb1 = new StringBuilder("hello");
+		StringBuilder sb2 = new StringBuilder("hello");
+		//3.
+		System.out.println(sb1.equals(sb2));
+		
+		//4.
+		String str1 = sb1.toString();
+		String str2 = sb2.toString();
+		System.out.println(str1.equals(str2));
+		
+		
+		
+
+	}
+
+}

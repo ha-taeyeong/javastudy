@@ -1,0 +1,16 @@
+package ex02_2d_array;
+
+public class Quiz02 {
+
+	public static void main(String[] args) {
+		int[][] gugu = new gugu[9][9];
+		for (int i = 0; i < gugu.length; i++) {
+			for( int j = 0; j < gugu[i].length; j++) {
+				System.out.print(gugu[i][j] + " ");
+			}
+		System.out.println();
+		}
+
+	}
+
+}

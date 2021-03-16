@@ -1,0 +1,18 @@
+package ex07_recusive;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		SayHello sh = new SayHello();
+		sh.say(5);
+		
+		Adder adder = new Adder();
+		adder.calculate(10); // 1부터 10까지 합계
+		System.out.println(adder.getTotal());
+		
+		Calculator calc = new Calculator();
+		int n = 5;
+		System.out.println(n +" !" + "="  + calc.getFatorial(n));
+	}
+
+}

@@ -1,0 +1,23 @@
+package ex01_array;
+
+import java.util.Scanner;
+
+public class Quiz03 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String[] students = {"타요", "브레드", "스폰지밥"};
+		int[] scores = new int[students.length];
+		for(int i = 0; i<scores.length; i++) {
+			System.out.print("점수 입력 >>> ");
+			scores[i] = sc.nextInt();
+		}
+		
+		
+		
+		
+		sc.close();
+
+	}
+
+}

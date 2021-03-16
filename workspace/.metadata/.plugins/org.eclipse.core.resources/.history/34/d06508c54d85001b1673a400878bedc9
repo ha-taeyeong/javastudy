@@ -1,0 +1,61 @@
+package quiz09;
+
+public class Soldier {
+	
+	//field
+	private String name;
+	private Gun[] guns;
+	private int idx;
+	
+	//constructor
+	public Soldier(String name, int gunCount) {
+		this.name = name;
+		this.guns = new Gun[gunCount];
+	}
+	
+	// method
+	public void addGun(Gun gun) {
+		if(idx < guns.length) {
+			guns[idx++] = gun;
+		}else {
+			System.out.println("더 이상 추가할 수 없습니다.");
+		}
+	}
+	
+	public void shoot() {
+		for (int i = 0; i < idx; i++) {
+			guns[i].shoot();
+		}
+	}
+	
+	public void shoot(int gunNo) {
+		guns[gunNo -1].shoot();  //배열의 인덱스 시작은 0이기 때문에 -1
+	}
+	
+	public void shoot(String model) {
+		for (int i = 0; i < idx; i++) {
+			if (guns[i].getModel().equals(model)) {
+				guns[i].shoot();
+			}
+		}
+	}
+	public void reload(int gunNo) {
+		guns[gunNo -1].shoot();  //배열의 인덱스 시작은 0이기 때문에 -1
+	}
+	
+	public void reload(String model) {
+		for (int i = 0; i < idx; i++) {
+			if (guns[i].getModel().equals(model)) {
+				guns[i].shoot();
+			}
+		}
+	}
+	
+
+	public void info() {
+		for(int i = 0; i < idx; i++) {
+			guns[i].info();
+		}
+		
+	}
+}

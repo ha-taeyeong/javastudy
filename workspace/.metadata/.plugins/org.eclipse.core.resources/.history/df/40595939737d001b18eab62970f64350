@@ -1,0 +1,22 @@
+package ex01_branch;
+
+//3. switch, 나이 입력 받아서 "성인", "미성년자"
+
+import java.util.Scanner;
+
+public class Quiz03 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("나이 >>> ");
+		int age = sc.nextInt();
+		
+		boolean choice = (age>=20);
+		
+		System.out.println(choice);
+		
+
+	}
+
+}

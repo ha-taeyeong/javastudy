@@ -1,0 +1,14 @@
+package ex07_recusive;
+
+public class Calculator {
+	
+	// 역할 : n! 값을 반환합니다.
+	// 3!(3 팩토리얼) == 1 * 2 * 3
+	public int getFatorial(int n) {
+		//return 3 * 2 * 1
+		if(n == 1) {
+			return n * getFactorial(n-1);
+		}
+	}
+}
+

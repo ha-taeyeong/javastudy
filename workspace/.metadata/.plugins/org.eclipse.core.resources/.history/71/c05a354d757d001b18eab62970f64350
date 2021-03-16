@@ -1,0 +1,31 @@
+package ex01_branch;
+
+import java.util.Scanner;
+
+public class Quiz03 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("나이 >>>");
+		int age = sc.nextInt();
+
+		boolean a1 = (age >= 20);
+		
+		a1 = true = 1;
+		a1 = false = 2;
+		
+		switch (a1) {
+		case 1 :
+			System.out.println("성인");
+			break;
+		case 2 :
+			System.out.println("미성년자");
+			break;
+		}
+		
+		
+
+	}
+
+}

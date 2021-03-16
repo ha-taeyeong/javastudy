@@ -1,0 +1,20 @@
+package ex01_user_type;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		// 클래스 Peson을 타입으로 하는 "객체를 생성합니다.
+		
+		Person p1 = new Person();
+		
+		System.out.println(p1.name);
+		System.out.println(p1.age);
+		System.out.println(p1.height);
+		System.out.println(p1.gender);
+		System.out.println(p1.isKorean);
+		
+		System.out.println(p1);
+	}
+
+}

@@ -1,0 +1,15 @@
+package ex07_recusive;
+
+public class Adder {
+	
+	private int total; // 0으로 초기화
+	
+	public void calculate(int n) {
+		if(n < 10) {
+			total += n;
+			calculate(n - 1);
+	}
+	
+	
+	
+}

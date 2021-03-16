@@ -1,0 +1,15 @@
+package quiz06;
+
+public class BreadAndChange {
+	
+	//field
+	private int bread;
+	private int change; // 잔돈
+	
+	//constructor
+	public BreadAndChange(int bread, int change) {
+		this.bread = bread;
+		this.change = change;
+	}
+
+}

@@ -1,0 +1,37 @@
+package ex01_random;
+
+import java.util.Scanner;
+
+public class Quiz02 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int top = 10000; // 최대값
+		int bottom = 1; //  최소값
+		int rand = (int)(Math.random() * top); //난수 발생
+		int n = 0; // 사용자 입력값
+		int times = 0; // 입력 횟수값
+		
+		do {
+			System.out.println("입력 >>> ");
+			n = sc.nextInt();
+			times++;
+			// 입력 범위 체크
+			if(n > top || n < bottom) {
+				System.out.println(bottom + "~" + top + "범위를 입력하세요.");
+				continue;
+			}
+			// 비교합니다.
+			if(n == rand) {
+				System.out.println("정답");
+			}else if(n < bottom) {
+				System.out.println("Up");
+			}else if(n > top){
+				System.out.println("Down");
+			}
+		}while(rand != n);
+		
+		
+	}
+
+}

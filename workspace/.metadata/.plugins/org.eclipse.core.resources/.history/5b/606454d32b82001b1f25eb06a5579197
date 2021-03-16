@@ -1,0 +1,23 @@
+package quiz03;
+
+public class Student {
+	String name;
+	int kor;
+	int eng;
+	int math;
+	double Average;
+	void set(String name, int kor, int eng, int math) {
+		
+	}
+	
+	double getAverage() {
+		double Average = (kor + eng + math) / 3;
+		return Average;
+	}
+	
+	String getPass() {
+		return (Average > 60) ? "합격" : "불합격";
+		
+	}
+
+}

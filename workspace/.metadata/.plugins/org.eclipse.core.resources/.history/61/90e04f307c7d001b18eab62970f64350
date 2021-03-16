@@ -1,0 +1,53 @@
+package ex01_branch;
+
+import java.util.Scanner;
+/*
+ * 5. 점수를 입력 받아서 해당하는 학점을 출력하시오.
+char grade : 'S', 'A', 'B', 'C', 'F'
+char point : '+', '0', '-', ' '
+
+100 : S
+ 99~97 : A+
+ 96~94 : A0
+ 93~90 : A-
+ 89~87 : B+
+ 86~84 : B0
+ 83~80 : B-
+ 79~77 : C+
+ 76~74 : C0
+ 73~70 : C-
+ 69~0   : F
+ */
+public class Quiz05 {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		System.out.println("점수 >>>");
+		int score = sc.nextInt();
+		
+		char grade = 'score / 100';
+		char point;
+		
+		switch (grade) {
+		case 0:
+			System.out.println("S");
+			break;
+		case 9:
+			System.out.println("A");
+			break;
+		case 8:
+			System.out.println("B");
+			break;
+		case 7:
+			System.out.println("C");
+			break;
+		default:
+			System.out.println("F");
+		
+		}
+		
+
+	}
+
+}

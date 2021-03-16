@@ -1,0 +1,13 @@
+package ex02_String;
+
+public class Quiz03 {
+
+	public static void main(String[] args) {
+		
+		String fullname = "2021-03-10.jpg";
+		String filename = fullname.replace(".jpg", "");// 2021-03-10
+		String extname = fullname.indexOf(".jpg");
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package ex01_random;
+
+import java.util.Random;
+
+public class Ex01_Random {
+
+	public static void main(String[] args) {
+		
+		Random random = new Random();
+		
+		// 1. int 난수
+		//random.nextInt( )의 난수 범위
+		//int 범위 중 하나
+		//random.nextint(10)의 난수 범위
+		//10개 중 하나 (0~9)	
+		int rand1 = random.nextInt();
+		int rand2 = random.nextInt(10);
+		
+//		System.out.println(rand1);
+//		System.out.println(rand2);
+		
+		// 2
+		double rand3 = random.nextDouble();
+		System.out.println(rand3);
+	}
+
+}

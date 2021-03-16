@@ -1,0 +1,27 @@
+package ex02_String;
+
+public class Ex01_String {
+
+	public static void main(String[] args) {
+		//1.
+		String a = "le";
+		String b = "le";
+		System.out.println(a == b); // 참조비교(주소비교)
+		
+		//2.
+		String c = new String("banana");
+		String d = new String("banana");
+		System.out.println(c == d);
+		
+		//3.
+		System.out.println(a.length()); // a.length = 5
+		
+		//4.
+		System.out.println(a.subSequence(0, 3)); // app (사용 인덱스 : 0, 1, 2)
+		
+		//5.
+		String name = "      alice       ";
+		System.out.println(name.trim().length());
+	}
+
+}
