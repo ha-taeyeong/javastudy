@@ -1,4 +1,4 @@
-package quz11;
+package quiz11;
 
 public class MainClass {
 
