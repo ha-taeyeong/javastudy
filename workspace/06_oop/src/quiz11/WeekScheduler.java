@@ -27,14 +27,14 @@ public class WeekScheduler {
 			menu();
 			System.out.print("작업 선택 >>> ");
 			int choice = sc.nextInt();
-			sc.nextLine(); // choice 입력 뒤에 남아 있는 엔터를 제거하기 위한 코드
+			sc.nextLine(); 
 			switch (choice) {
 			case 1 : makeSchedule(); break;
 			case 2 : deleteSchedule(); break;
 			case 3 : updateSchedule(); break;
 			case 4 : searchSchedule(); break;
 			case 5 : printAllSchedule(); break;
-			case 0 : exit(); return;// run 메소드의 실행을 종료하는 코드 <반환 타입이 void인 경우 return;으로 종료한다.>
+			case 0 : exit(); return;// \
 			default : System.out.println("없는 작업입니다. 다시 입력하세요.");
 			}
 		}
