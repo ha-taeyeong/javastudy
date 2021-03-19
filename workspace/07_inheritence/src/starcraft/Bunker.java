@@ -1,0 +1,20 @@
+package starcraft;
+
+public class Bunker {
+	
+	// field
+	private Terran[] terrans;
+	private int idx;
+	
+	//constructor
+	public Bunker() {
+		terrans = new Terran[10];
+	}
+	
+	// method
+	public void add(Bunkable terran) {
+		if (idx < terrans.length) {
+			terrans[idx++] = (Terran)terran;
+		}
+	}
+}
