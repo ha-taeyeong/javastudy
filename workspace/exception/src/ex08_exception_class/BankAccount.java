@@ -1,4 +1,4 @@
-package quiz05;
+package ex08_exception_class;
 
 public class BankAccount {
 	
@@ -12,27 +12,24 @@ public class BankAccount {
 		this.balance = balance;
 	}
 	
-	public void deposit(long money) {
+	public void deposit(long money) throws BankAccountException {
 		if(money <= 0) {
-			System.out.println(money + "원은 입금이 불가능합니다.");
-			return;
+			throw new BankAccountException(money + "원은 입금이 불가능합니다.", 1000);
 		}
 		this.balance += money;
 	}
 	
-	public long withdraw(long money) {
+	public long withdraw(long money) throws BankAccountException {
 		if(money <= 0) {
-			System.out.println(money + "원은 출금이 불가능합니다.");
-			return 0;
+			throw new BankAccountException(money + "원은 출금이 불가능합니다.", 2000);
 		}else if(money > balance) {
-			System.out.println("잔액이 부족합니다.");
-			return 0;
+			throw new BankAccountException("잔액이 부족합니다.", 2001);
 		}
 		this.balance -= money;
 		return money;
 	}
 	
-	public void transfer(BankAccount you, long money) {
+	public void transfer(BankAccount you, long money) throws BankAccountException {
 		you.deposit(withdraw(money));
 	}
 	

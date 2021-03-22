@@ -33,7 +33,6 @@ public class BankAccount {
 	
 	public void inquiry() {
 		System.out.println("계좌번호 : " + accNo + "잔액 : " + balance + "원");
-		System.out.println("계좌번호 : " + accNo + "잔액 : " + balance + "원");
 	}
 	
 	public void transfer(BankAccount you, long money) {
@@ -53,8 +52,5 @@ public class BankAccount {
 			System.out.println("예외코드: " + e.getErrorCode());
 		}
 		
-	}
-	
-	
-	
+	}	
 }

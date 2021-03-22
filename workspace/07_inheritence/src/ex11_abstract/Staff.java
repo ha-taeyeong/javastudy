@@ -21,4 +21,5 @@ public abstract class Staff { // abstract public 도 가능합니다.
 	 }
 	 */
 	// 본문이 없는 getPay() 메소드를 만들면 됩니다.
+	public abstract int getPay(); 
 }

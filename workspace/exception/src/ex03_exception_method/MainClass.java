@@ -3,8 +3,6 @@ package ex03_exception_method;
 public class MainClass {
 
 	public static void main(String[] args) {
-
-
 		try {
 			//int a = 2 / 0;
 			Integer.parseInt("1.5");
@@ -13,7 +11,6 @@ public class MainClass {
 			System.out.println("예외메시지: " + e.getMessage()); 
 			e.printStackTrace();
 		}
-
 	}
-
 }
+
