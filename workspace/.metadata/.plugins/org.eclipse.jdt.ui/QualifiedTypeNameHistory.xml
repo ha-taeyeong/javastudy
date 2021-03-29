@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="java.util.Calendar"/>
-<fullyQualifiedTypeName name="java.awt.Rectangle"/>
-<fullyQualifiedTypeName name="java.awt.print.Book"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
-<fullyQualifiedTypeName name="quiz04.Soldier"/>
-<fullyQualifiedTypeName name="java.text.DecimalFormat"/>
 <fullyQualifiedTypeName name="quiz12.SeatGroup"/>
 <fullyQualifiedTypeName name="quiz12.ConcertHall"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -47,15 +37,27 @@
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="dao.StaffDao"/>
 <fullyQualifiedTypeName name="main.StaffMainClass"/>
 <fullyQualifiedTypeName name="main.StaffManger"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="dto.StaffDto"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.DataOutputStream"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.DataInputStream"/>
+<fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
+<fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
+<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="ex02_byte.Board"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="ex02_byte.ObjectInputStreamMainClass"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
